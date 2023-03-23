@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Kamatszamitás</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
     <div class="container">
-        <h1>Sablon</h1>
+        <h1>Kamatszamitás</h1>
+    <!-- labelek -->
+        <div class="mt-3">
+            <label for="Betét" class="form-label">Betét:</label>
+            <input type="text" id="Betét" class="form-control">
+        </div>
+        <div class="mt-3">
+            <label for="Névlegeskamatot" class="form-label">Névleges kamatot (%):</label>
+            <input type="text" id="Névlegeskamatot" class="form-control">
+        </div>
+        <div class="mt-3">
+            <label for="Évenkéntitőkésítésekszáma" class="form-label">Évenkénti tőkésítések száma:</label>
+            <input type="text" id="Évenkéntitőkésítésekszáma" class="form-control">
+        </div>
+    <!-- labelek/ -->
+
+    <!-- gomb -->
+        <button id="calcButton" class="btn btn-warning mt-3">Számít</button>
+    <!-- gomb/ -->
+
+    <!-- eredmeny label -->
+        <div class="mt-3">
+            <label for="Ténylegeséveskamat" class="form-label">Tényleges éves kamat:</label>
+            <input type="text" id="Ténylegeséveskamat" class="form-control">
+        </div>
+    <!-- eredmeny label/ -->
+    
+
+        <footer class="text-center rounded mx-auto d-block"><span>Szekeres miklos</span>, Szoft 1/2N, <span>2023.03.23</span></footer>
+   
     </div>
     <script src="js/bootstrap.js"></script>
     <script src="app.js"></script>
